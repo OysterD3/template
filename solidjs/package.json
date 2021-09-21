@@ -1,0 +1,52 @@
+{
+  "name": "solidjs-template",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-solid": "^0.1.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "vite-plugin-solid": "^2.0.3",
+    "vite-plugin-windicss": "^1.4.3"
+  },
+  "dependencies": {
+    "solid-app-router": "^0.1.5",
+    "solid-js": "^1.1.5"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "solid",
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:solid/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "overrides": [
+      {
+        "files": ["*.ts"],
+        "rules": {
+          "no-undef": "off"
+        }
+      }
+    ]
+  },
+  "prettier": {
+    "singleQuote": false,
+    "trailingComma": "all",
+    "semi": true
+  }
+}
